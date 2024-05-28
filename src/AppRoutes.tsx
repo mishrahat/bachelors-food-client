@@ -9,6 +9,7 @@ import Auth0ProviderWithNavigate from "./auth/Auth0ProviderWithNavigate";
 import AuthCallbackPage from "./pages/AuthCallbackPage";
 import UserProfilePage from "./pages/UserProfilePage";
 import ProtectedRoute from "./auth/ProtectedRoute";
+import RestaurantPage from "./pages/RestaurantPage";
 
 const AppRoutes = createBrowserRouter(
   createRoutesFromElements(
@@ -18,6 +19,7 @@ const AppRoutes = createBrowserRouter(
 
       <Route element={<ProtectedRoute />}>
         <Route path="/user-profile" element={<UserProfilePage />} />
+        <Route path="/manage-restaurant" element={<RestaurantPage />} />
       </Route>
       <Route path="*" element={<Navigate to="/" />} />
     </Route>

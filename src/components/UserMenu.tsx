@@ -21,6 +21,11 @@ const UserMenu = () => {
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
         <DropdownMenuItem className="flex gap-2">
+          <Link className="font-bold" to="/manage-restaurant">
+            Manage Restaurant
+          </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem className="flex gap-2">
           <AvatarIcon />
           <Link className="font-bold" to="/user-profile">
             Profile
