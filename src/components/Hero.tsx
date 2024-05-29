@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="flex lg:flex-row flex-col justify-between items-start py-48 h-screen">
       <div>
-        <h1 className="text-8xl font-bold text-red-950">
+        <h1 className="lg:text-8xl text-5xl font-bold text-red-950">
           Bachelors Meal <br /> On Door!
         </h1>
       </div>
