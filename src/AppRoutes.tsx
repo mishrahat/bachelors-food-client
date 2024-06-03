@@ -10,12 +10,14 @@ import AuthCallbackPage from "./pages/AuthCallbackPage";
 import UserProfilePage from "./pages/UserProfilePage";
 import ProtectedRoute from "./auth/ProtectedRoute";
 import RestaurantPage from "./pages/RestaurantPage";
+import SearchPage from "./pages/SearchPage";
 
 const AppRoutes = createBrowserRouter(
   createRoutesFromElements(
     <Route element={<Auth0ProviderWithNavigate />}>
       <Route path="/" element={<Home />} />
       <Route path="/auth-callback" element={<AuthCallbackPage />} />
+      <Route path="/search/:city" element={<SearchPage />} />
 
       <Route element={<ProtectedRoute />}>
         <Route path="/user-profile" element={<UserProfilePage />} />
