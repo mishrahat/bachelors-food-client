@@ -10,7 +10,7 @@ import {
 type Props = {
   page: number;
   pages: number;
-  onPageChange: () => void;
+  onPageChange: (page: number) => void;
 };
 
 const PaginationSelector = ({ page, pages, onPageChange }: Props) => {

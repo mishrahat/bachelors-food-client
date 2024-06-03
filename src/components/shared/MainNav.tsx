@@ -4,7 +4,6 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { Button } from "../ui/button";
 import UserMenu from "../UserMenu";
 import SearchBar, { SearchForm } from "../SearchBar";
-import path from "path";
 
 const MainNav = () => {
   const { loginWithRedirect, user } = useAuth0();

@@ -26,7 +26,7 @@ const SearchPage = () => {
     sortOption: "bestMatch",
   });
 
-  const [isExpanded, setIsExpanded] = useState<Boolean>(false);
+  const [isExpanded, setIsExpanded] = useState<boolean>(false);
 
   const { results, isLoading } = useSearchRestaurants(searchState, city);
 
